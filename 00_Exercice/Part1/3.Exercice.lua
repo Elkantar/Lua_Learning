@@ -19,9 +19,9 @@ Essayez de résoudre cet exercice en utilisant Lua et assurez-vous de gérer les
 --
 
 print("Veuillez entrer un chiffre :")
-int = io.read("*n")
+local int = io.read("*n")
 
-function factorial(int)
+local function factorial(int)
     local result = 1
     for i = 1, int do
         result = result * i
@@ -29,7 +29,7 @@ function factorial(int)
     return result
 end
 
-result = factorial(int)
+local result = factorial(int)
 print(result)
 
 --correction \/

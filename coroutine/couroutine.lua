@@ -1,4 +1,6 @@
-co = coroutine.create(function(value1, value2)
+local numberHelper,status
+
+local co = coroutine.create(function(value1, value2)
     local tempvar3 = 10
     print("coroutine section 1", value1, value2, tempvar3)
 

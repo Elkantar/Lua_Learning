@@ -24,7 +24,7 @@ Essayez de résoudre cet exercice sans utiliser de code et assurez-vous de compr
 ]]
    --
 
-function deleteWhiteSpace(chaine)
+local function deleteWhiteSpace(chaine)
     local nouvelleChaine = ""
 
     -- Supprimer les espaces en utilisant une boucle
@@ -36,11 +36,11 @@ function deleteWhiteSpace(chaine)
     return nouvelleChaine
 end
 
-function Palindrome(caracter)
+local function Palindrome(caracter)
     --print(caracter)
-    result = deleteWhiteSpace(caracter)
+    local result = deleteWhiteSpace(caracter)
     --print(result)
-    resultrev = string.reverse(result)
+    local resultrev = string.reverse(result)
     --print(resultrev)
     if result == resultrev then
         return true
@@ -49,9 +49,9 @@ function Palindrome(caracter)
 end
 
 print("veillez entrez une chaîne de caractères: ")
-caracter = io.read()
+local caracter = io.read()
 
-palin = Palindrome(caracter)
+local palin = Palindrome(caracter)
 
 if palin == true then
     print("La chaîne est un palindrome.")

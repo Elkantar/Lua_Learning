@@ -1,7 +1,8 @@
 --[[
     Mini-Projet : Calculatrice simple
 
-L'objectif est de créer une calculatrice simple en Lua capable de réaliser les opérations basiques telles que l'addition, la soustraction, la multiplication et la division sur deux nombres saisis par l'utilisateur.
+L'objectif est de créer une calculatrice simple en Lua capable de réaliser les opérations basiques 
+telles que l'addition, la soustraction, la multiplication et la division sur deux nombres saisis par l'utilisateur.
 
 Fonctionnalités attendues :
 
@@ -14,10 +15,10 @@ Exemple :
 
 Si l'utilisateur entre les nombres 10 et 5, et choisit de faire une addition, le programme devrait afficher 15 (10 + 5).
 ]]
-   --
+--
 
 
-   local function fractionProche(decimal)
+local function fractionProche(decimal)
     local tolerance = 0.0001 -- Tolerance pour définir une marge d'erreur
 
     local numerateur = 1

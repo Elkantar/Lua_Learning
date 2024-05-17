@@ -1,11 +1,11 @@
-array = {"Lua", "Tutorial"}
+local array = {"Lua", "Tutorial"}
 
 for i = 0, 2 do
    print(array[i])
 end
 
 print("")
-array2 = {}
+local array2 = {}
 
 for i= -2, 2 do
    array2[i] = i *2
